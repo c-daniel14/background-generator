@@ -1,0 +1,156 @@
+@charset "UTF-8";
+body {
+  margin: 10px 10px 10px 10px;
+	font: 'Raleway', sans-serif;
+  color: rgba(0,0,0,.5);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: .5em;
+  top: 15%;
+	background: linear-gradient(to right, red , yellow); 
+}
+
+@media (max-width: 1000px) {
+  body { font-size: large; }
+}
+@media (max-width: 500px) {
+  body { font-size: medium; }
+}
+
+input{
+	border-radius: 5px;
+	width: 15px;
+  height: 15px;
+	border: 2px solid #41968d;
+	background-color: #41968d;
+	box-shadow: 0px 0px 1px 1px #41968d;
+  transform: all 0.5s;
+  cursor: pointer;
+  opacity: 0.5;
+}	
+
+input:hover{
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+#random-color{
+    margin: 100px 10px 10px 20px;
+    width: 150px;
+    font-weight: bold;
+    color: #FFFFFF;
+    font: 'Raleway', sans-serif;
+	border-radius: 10px;
+	border: 2px solid #41968d;
+	background-color: #41968d;
+	box-shadow: 0px 0px 2px 2px #41968d;
+	transform: all 0.5s;
+    cursor: pointer;
+}
+#random-color:hover{
+	transform: scale(1.1);
+}
+h1 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .4em;
+    width: 100%;
+}
+h1:hover{
+    
+}
+
+h3 {
+	font: 900 1em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.5);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.01em;
+}
+
+footer{
+  display: flex;
+  position: relative;
+  margin-top: 150px;
+  font-size: 0.1rem;
+  height: 40px;
+  widows: 100%;
+  /*position: absolute;*/
+  bottom: 0;
+  font-family: 'Bitter', serif;
+  font-size: 12px;
+}
+
+.animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.jackInTheBox {
+  -webkit-animation-name: jackInTheBox;
+  animation-name: jackInTheBox;
+}
